@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <style>
-.logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.tour{
-    text-decoration:none;
-    margin: 4px;
-}
-.hero{
-    height: 700px;
-    width: 1500px;
-}
-body{
-    background-image: url("hero.jpg");
-    background-repeat: no-repeat;
-}
-.div{
-    width: 100%;
-    height: 60vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        *{
+            font-family: 'Exo 2', sans-serif;
+        }
+        h3{
+            margin-bottom: -6px;
+        }
+        h4{
+            margin-bottom: -6px;
+        }
+        
 
+        .tour {
+            text-decoration: none;
+            margin: 4px;
+        }
+
+        .card {
+            width: 350px;
+            padding: 15px;
+            border: 2px solid gray;
+            border-radius: 15px;
+        }
+        .image {
+            background-image: url('./card.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 250px;
+            border-radius: 5px;
+            margin-top: linear;
+        }
+        .button{
+            text-align: center;
+            background-color:azure;
+        }
+        .button-con{
+            text-align: center;
+        }
     </style>
     <img src="logo.jpg" class="logo">
-    <a class="tour" href="./tour.html">Tours</a> 
+    <a class="tour" href="./tour.html">Tours</a>
     <a class="tour" href="./about.html">about us</a>
     <a class="tour" href="./contact.html">contact us</a>
-    <p style="background-image: url('hero.jpg');">
-        <div class="div">
-            <p style="background-image: url('hero.jpg');">
+    <div class="card">
+        <div class="image">
+            <!-- <img src="card.jpg" width="100%" height="250px"> -->
         </div>
+       
+        <h1>skardu</h1>
+        <h3>description:</h3>
+        <p>Skardu, a scenic valley with blue water and high mountains, is located at an elevation of over 7,300
+            feet (2,225 meters) in Pakistan's northern Gilgit-Baltistan region</p>
+        <h4>rating:</h4>
+        <p>5 star</p>
+        <h4>price:</h4>
+        <p>50,000</p>
+        <div class="button-con" >
+     <a href="./select.html"><button class="button">Select</button></a>
+        </div>
+                    
+    </div>
+    
 
-</body>
 </html>
+</body>
