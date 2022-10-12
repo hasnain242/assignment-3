@@ -1,4 +1,4 @@
-name: Deploying CV to surge
+name: Deploying tours and travels to surge
 
 on: [push]
 
@@ -15,4 +15,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run surge
-        run: surge ./ hasnain_sadiq_assignment_two.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ hasnain_sadiq_assignment_three.surge.sh --token ${{ secrets.SURGE_TOKEN }}
