@@ -1,0 +1,18 @@
+name: Deploying CV to surge
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Deploying to surge
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 16
+      - name: Install Surge
+        run: npm install -g surge
+      - name: Run surge
+        run: surge ./ hasnain_sadiq_assignment_two.surge.sh --token ${{ secrets.SURGE_TOKEN }}
